@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+if [ -f ./coerce_boolean.gemspec ]; then
+  # tar -C ./ -zxvf versions.tar.gz
+  rm -rf coerce_boolean-*.gem
+  gem build coerce_boolean.gemspec
+  gem push coerce_boolean-*.gem
+fi

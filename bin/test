@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+if [[ -z "$1" ]] ; then
+  bundle exec rake test
+else
+  for filename in $(find test/* -wholename */$1_test.rb); do
+    if ! bundle exec rake test "$filename"; then
+      exit 1
+    fi
+  done
+fi
+exit 0
