@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
 
   s.files = Dir["lib/**/*", "MIT-LICENSE", "README.md"]
 
-  s.add_development_dependency "activesupport", "~> 6.0"
+  s.add_development_dependency "activesupport", "~> 7.0"
   s.add_development_dependency "minitest", "~> 5.1"
   s.add_development_dependency 'minitest-reporters', "~> 1.4"
   s.add_development_dependency "rake", "~> 13.0"
